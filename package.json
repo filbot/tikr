@@ -18,5 +18,8 @@
   "homepage": "https://github.com/filbot/tikr#readme",
   "dependencies": {
     "webpack": "^1.12.11"
+  },
+  "devDependencies": {
+    "jquery": "^2.2.0"
   }
 }
