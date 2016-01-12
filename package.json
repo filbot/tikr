@@ -1,0 +1,22 @@
+{
+  "name": "tikr",
+  "version": "1.0.0",
+  "description": "Display stock prices and changes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://filbot@github.com/filbot/tikr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filbot/tikr/issues"
+  },
+  "homepage": "https://github.com/filbot/tikr#readme",
+  "dependencies": {
+    "webpack": "^1.12.11"
+  }
+}
