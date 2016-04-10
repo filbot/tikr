@@ -1,6 +1,5 @@
 import React from "react";
-
-import Table from "./Table";
+import Cards from "./Cards";
 import Header from "./Header";
 
 export default class Layout extends React.Component {
@@ -9,7 +8,7 @@ export default class Layout extends React.Component {
       <div>
         <Header />
         <div>
-          <Table {...this.props} />
+          <Cards {...this.props} />
         </div>
       </div>
     );

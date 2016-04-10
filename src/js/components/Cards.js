@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-export default class Table extends React.Component {
+export default class Cards extends React.Component {
   constructor(props) {
     super(props);
     this.state = {data: []};
