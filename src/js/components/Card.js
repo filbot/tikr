@@ -11,18 +11,18 @@ export default class Card extends React.Component {
         <div class="stock-price">
           <div class="price">{this.props.data.Ask}</div>
           <div class="stock-details">
-            <span class="change">+{this.props.data.Ask}</span>
-            <span class="change-precent">({this.props.data.Ask}%)</span>
+            <span class="change">{this.props.data.Change}</span>
+            <span class="change-precent">({this.props.data.ChangeinPercent})</span>
           </div>
         </div>
         <div class="high-low">
           <div class="low">
             <span class="low-text">low</span>
-            <span class="low-number">{this.props.data.Ask}</span>
+            <span class="low-number">{this.props.data.DaysLow}</span>
           </div>
           <div class="high">
             <span class="high-text">high</span>
-            <span class="high-number">{this.props.data.Ask}</span>
+            <span class="high-number">{this.props.data.DaysHigh}</span>
           </div>
         </div>
       </div>

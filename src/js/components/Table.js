@@ -31,7 +31,7 @@ export default class Table extends React.Component {
     var quotes = this.state.data;
 
     return (
-      <div class="col-md-4">
+      <div class="card-container">
         {quotes.map(function(quote) {
           if (quote.Name !== null && quote.Ask !== null) {
             return <Card key={quote.symbol} data={quote}  />

@@ -2,12 +2,20 @@
 body {
   padding-top: 70px;
   font-family: 'Roboto', sans-serif;
+  background-color: #c3cbd4;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .stock-card {
   padding: 2rem;
   width: 250px;
   height: 250px;
+  margin-bottom: 1rem;
   background-color: #0f1a34;
   color: #fff;
   display: flex;
