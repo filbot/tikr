@@ -1,0 +1,10 @@
+/*for fixed top nav*/
+body {
+  padding-top: 70px;
+  background-color: #c6d3e8;
+}
+
+#app .thumbnail {
+  background-color: #111c33;
+  border: none;
+}
