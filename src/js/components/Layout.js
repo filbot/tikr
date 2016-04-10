@@ -8,7 +8,7 @@ export default class Layout extends React.Component {
     return (
       <div>
         <Header />
-        <div class="container">
+        <div class="container-fluid">
           <Table {...this.props} />
         </div>
       </div>

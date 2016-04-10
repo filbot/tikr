@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./Card";
 
 export default class Table extends React.Component {
   constructor(props) {
@@ -30,14 +31,13 @@ export default class Table extends React.Component {
     var quotes = this.state.data;
 
     return (
-      <div class="container-fluid">
+      <div class="col-md-4">
         {quotes.map(function(quote) {
           if (quote.Name !== null && quote.Ask !== null) {
-            return <div class="col-md-6" key={quote.symbol}>{quote.Name} - ${quote.Ask}</div>
+            return <Card key={quote.symbol} data={quote}  />
           }
         })}
       </div>
-
     );
   }
 }

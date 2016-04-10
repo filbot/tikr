@@ -1,10 +1,68 @@
 /*for fixed top nav*/
 body {
   padding-top: 70px;
-  background-color: #c6d3e8;
+  font-family: 'Roboto', sans-serif;
 }
 
-#app .thumbnail {
-  background-color: #111c33;
-  border: none;
+.stock-card {
+  padding: 2rem;
+  width: 250px;
+  height: 250px;
+  background-color: #0f1a34;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.company-name,
+.stock-details {
+  font-weight: 300;
+}
+
+.change {
+  margin-right: 0.5rem;
+}
+
+.stock-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price {
+  margin-bottom: 0.25rem;
+  font-size: 4rem;
+}
+
+.high-low {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.high,
+.low {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.high {
+  color: #14e56b;
+}
+
+.low {
+  color: #f95c70;
+  border-right: 1px solid #fff;
+}
+
+.low-text,
+.high-text {
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
 }
