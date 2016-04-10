@@ -34,7 +34,7 @@ export default class Cards extends React.Component {
       <div class="card-container">
         {quotes.map(function(quote) {
           if (quote.Name !== null && quote.Ask !== null) {
-            return <Card key={quote.symbol} data={quote}  />
+            return <Card key={quote.symbol} data={quote}/>
           }
         })}
       </div>
