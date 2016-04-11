@@ -8,6 +8,7 @@ export default class Cards extends React.Component {
   }
 
   loadStocksFromYahoo() {
+    console.log('loading stock info');
     $.ajax({
       url: this.props.yahooUrl,
       jsonp: 'callback',
@@ -23,8 +24,11 @@ export default class Cards extends React.Component {
   }
 
   componentDidMount() {
-    this.loadStocksFromYahoo();
-    setInterval(this.loadStocksFromYahoo, this.props.pollInterval);
+    setInterval(this.loadStocksFromYahoo.bind(this), this.props.pollInterval);
+  }
+
+  componentWillUnmount() {
+    this.loadStocksFromYahoo.abort();
   }
 
   render() {
